@@ -6,69 +6,25 @@
 
 body {
     font-family: Arial;
+    font-size: larger;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; /* Створює три рівні колонки */
+    grid-template-columns: 40% repeat(5, auto); /* Створює три рівні колонки */
     grid-gap: 10px; /* Відстань між елементами */
-    padding: 20px;
+    padding: 10px;
     grid-template-areas:
         "mainLogo main aboutUs catalogue contacts basket";
     background-color: black;
+    align-items: center;
 }
 
-.mainLogo {
+.grid-item {
     background-color: #000000;
+    color: white;
     padding: 20px;
-    grid-area: 1 / 1 / span 2 / span 3/ span 4/ span 5/ span 6;
+    text-align: center;
     
-}
-
-.main {
-    background-color: #000000;
-    padding: 20px;
-    grid-area: main;
-    color: white;
-    grid-area: 1 / 2 / span 2 / span 3/ span 4/ span 5/ span 6;
-}
-
-.aboutUs {
-    background-color: #000000;
-    padding: 20px;
-    grid-area: aboutUs;
-    color: white;
-
-}
-
-.catalogue {
-    background-color: #000000;
-    padding: 20px;
-    grid-area: catalogue;
-    color: white;
-}
-
-.contacts {
-    background-color: #000000;
-    padding: 20px;
-    grid-area: contacts;
-    color: white;
-}
-
-
-.basket {
-    background-color: #000000;
-    padding: 20px;
-    grid-area: basket;
-    color: white;
-}
-
-
-/* .grid-item {
-    background-color: #000000;
-    color: white;
-    padding: 20px;
-    text-align: justify;
-    /* border-radius: 5px; */
-/* } */ 
+} 
 
